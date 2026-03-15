@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression de compte - Lini</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #000;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #000;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        strong {
+            color: #000;
+            font-weight: 600;
+        }
+
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: #FFF9E6;
+            padding: 15px;
+            border-left: 4px solid #FFD700;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .danger-box {
+            background-color: #FFF0F0;
+            padding: 15px;
+            border-left: 4px solid #FF3B30;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .steps {
+            counter-reset: step-counter;
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .steps li {
+            counter-increment: step-counter;
+            padding: 12px 12px 12px 50px;
+            position: relative;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #000;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Suppression de compte</h1>
+        <p class="last-updated">Dernière mise à jour : 1 mars 2026</p>
+
+        <div class="section">
+            <p>Vous pouvez supprimer votre compte <strong>Lini</strong> à tout moment, directement depuis l'application. La suppression est définitive et irréversible.</p>
+        </div>
+
+        <div class="section">
+            <h2>Comment supprimer votre compte</h2>
+            <p>La suppression se fait entièrement depuis l'application Lini :</p>
+            <ul class="steps">
+                <li>Ouvrez l'application <strong>Lini</strong></li>
+                <li>Appuyez sur l'onglet <strong>Options</strong> (en bas à droite)</li>
+                <li>Faites défiler jusqu'à la section <strong>Compte</strong></li>
+                <li>Appuyez sur <strong>Supprimer le compte</strong></li>
+                <li>Confirmez la suppression en suivant les instructions à l'écran</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Données supprimées</h2>
+            <p>La suppression de votre compte entraîne la suppression définitive des données suivantes :</p>
+            <ul>
+                <li>Votre compte et vos informations personnelles (email, nom, photo de profil)</li>
+                <li>Toutes vos publications et commentaires</li>
+                <li>Vos préférences et paramètres (lignes favorites, notifications, etc.)</li>
+                <li>Votre token de notification push</li>
+                <li>Votre score, grade et statistiques d'engagement</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Données conservées</h2>
+            <p>Certaines données peuvent être conservées après suppression :</p>
+            <ul>
+                <li><strong>Données de facturation</strong> : conservées 10 ans conformément à l'obligation légale fiscale</li>
+                <li><strong>Logs techniques</strong> : conservés temporairement pour des raisons de sécurité</li>
+            </ul>
+        </div>
+
+        <div class="danger-box">
+            <strong>Action irréversible</strong>
+            <p style="margin-top: 8px; margin-bottom: 0;">La suppression du compte est définitive. Toutes vos données seront effacées dans un délai de 30 jours. Il ne sera pas possible de récupérer votre compte ou vos données après confirmation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Abonnement Premium</h2>
+            <p>Si vous êtes abonné Premium, la suppression de votre compte <strong>n'annule pas automatiquement votre abonnement</strong> côté Apple App Store. Vous devez annuler votre abonnement manuellement avant ou après la suppression :</p>
+            <ul>
+                <li>Allez dans <strong>Réglages</strong> de votre iPhone</li>
+                <li>Appuyez sur votre nom, puis <strong>Abonnements</strong></li>
+                <li>Sélectionnez <strong>Lini</strong> et appuyez sur <strong>Annuler l'abonnement</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Besoin d'aide ?</h2>
+            <p>Si vous rencontrez des difficultés pour supprimer votre compte depuis l'application, contactez-nous :</p>
+            <ul>
+                <li><strong>Email :</strong> <a href="mailto:quentin.michaud.pro@gmail.com">quentin.michaud.pro@gmail.com</a></li>
+            </ul>
+            <p>Nous traiterons votre demande de suppression dans un délai de 30 jours.</p>
+        </div>
+
+        <div class="highlight">
+            <p><strong>Politique de confidentialité :</strong> Pour en savoir plus sur la gestion de vos données, consultez notre <a href="/privacy-policy">politique de confidentialité</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
